@@ -35,14 +35,14 @@ a.active {
 }
 
 a {
-    color: #fed136;
+    color: #0B2F4F;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #fec503;
+    color: #0B2F4F;
 }
 
 h1,
@@ -54,6 +54,7 @@ h6 {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+	color:#0B2F4F;
 }
 
 .img-centered {
@@ -176,14 +177,14 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #fed136;
+    color: #0B2F4F;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #fec503;
+    color: #0B2F4F;
 }
 
 .navbar-default .navbar-collapse {
@@ -259,6 +260,18 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
+}
+
+.page-scroll {
+	color:#C7C7C7;
+}
+
+.nav {
+	background-color:#fff;
+}
+
+.navbar-nav {
+	background-color:#fff;
 }
 
 header {
