@@ -1,4 +1,4 @@
-/* jqBootstrapValidation
+﻿/* jqBootstrapValidation
  * A plugin for automating validation on Twitter Bootstrap formatted forms.
  *
  * v1.3.6
@@ -106,7 +106,7 @@
             //                                                   PATTERN
             // ---------------------------------------------------------
             if ($this.attr("pattern") !== undefined) {
-              message = "Not in the expected format<!-- data-validation-pattern-message to override -->";
+              message = "Não está no formato esperado<!-- data-validation-pattern-message to override -->";
               if ($this.data("validationPatternMessage")) {
                 message = $this.data("validationPatternMessage");
               }
@@ -118,7 +118,7 @@
             // ---------------------------------------------------------
             if ($this.attr("max") !== undefined || $this.attr("aria-valuemax") !== undefined) {
               var max = ($this.attr("max") !== undefined ? $this.attr("max") : $this.attr("aria-valuemax"));
-              message = "Too high: Maximum of '" + max + "'<!-- data-validation-max-message to override -->";
+              message = "Muito alto: Máximo de '" + max + "'<!-- data-validation-max-message to override -->";
               if ($this.data("validationMaxMessage")) {
                 message = $this.data("validationMaxMessage");
               }
@@ -130,7 +130,7 @@
             // ---------------------------------------------------------
             if ($this.attr("min") !== undefined || $this.attr("aria-valuemin") !== undefined) {
               var min = ($this.attr("min") !== undefined ? $this.attr("min") : $this.attr("aria-valuemin"));
-              message = "Too low: Minimum of '" + min + "'<!-- data-validation-min-message to override -->";
+              message = "Muito baixo: Mínimo de '" + min + "'<!-- data-validation-min-message to override -->";
               if ($this.data("validationMinMessage")) {
                 message = $this.data("validationMinMessage");
               }
@@ -141,7 +141,7 @@
             //                                                 MAXLENGTH
             // ---------------------------------------------------------
             if ($this.attr("maxlength") !== undefined) {
-              message = "Too long: Maximum of '" + $this.attr("maxlength") + "' characters<!-- data-validation-maxlength-message to override -->";
+              message = "Muito tempo: Máximo de '" + $this.attr("maxlength") + "' characters<!-- data-validation-maxlength-message to override -->";
               if ($this.data("validationMaxlengthMessage")) {
                 message = $this.data("validationMaxlengthMessage");
               }
@@ -152,7 +152,7 @@
             //                                                 MINLENGTH
             // ---------------------------------------------------------
             if ($this.attr("minlength") !== undefined) {
-              message = "Too short: Minimum of '" + $this.attr("minlength") + "' characters<!-- data-validation-minlength-message to override -->";
+              message = "Muito curto: Mínimo de '" + $this.attr("minlength") + "' characters<!-- data-validation-minlength-message to override -->";
               if ($this.data("validationMinlengthMessage")) {
                 message = $this.data("validationMinlengthMessage");
               }
@@ -183,7 +183,7 @@
             //                                                     EMAIL
             // ---------------------------------------------------------
             if ($this.attr("type") !== undefined && $this.attr("type").toLowerCase() === "email") {
-              message = "Not a valid email address<!-- data-validator-validemail-message to override -->";
+              message = "Endereço de e-mail não válido<!-- data-validator-validemail-message to override -->";
               if ($this.data("validationValidemailMessage")) {
                 message = $this.data("validationValidemailMessage");
               } else if ($this.data("validationEmailMessage")) {
@@ -195,7 +195,7 @@
             //                                                MINCHECKED
             // ---------------------------------------------------------
             if ($this.attr("minchecked") !== undefined) {
-              message = "Not enough options checked; Minimum of '" + $this.attr("minchecked") + "' required<!-- data-validation-minchecked-message to override -->";
+              message = "Não teve opções suficientes para verificação; mínimo de '" + $this.attr("minchecked") + "' required<!-- data-validation-minchecked-message to override -->";
               if ($this.data("validationMincheckedMessage")) {
                 message = $this.data("validationMincheckedMessage");
               }
@@ -206,7 +206,7 @@
             //                                                MAXCHECKED
             // ---------------------------------------------------------
             if ($this.attr("maxchecked") !== undefined) {
-              message = "Too many options checked; Maximum of '" + $this.attr("maxchecked") + "' required<!-- data-validation-maxchecked-message to override -->";
+              message = "Há muitas opções para verificação; máximo de '" + $this.attr("maxchecked") + "' required<!-- data-validation-maxchecked-message to override -->";
               if ($this.data("validationMaxcheckedMessage")) {
                 message = $this.data("validationMaxcheckedMessage");
               }
@@ -291,7 +291,7 @@
               (
                 message
                   ? message
-                  : "'" + el + "' validation failed <!-- Add attribute 'data-validation-" + el.toLowerCase() + "-message' to input to change this message -->"
+                  : "'" + el + "' falha na validação <!-- Add attribute 'data-validation-" + el.toLowerCase() + "-message' a entrada para mudar esta mensagem -->"
               )
             ;
 
@@ -350,7 +350,7 @@
             }
 
             if (! foundValidator) {
-              $.error("Cannot find validation info for '" + el + "'");
+              $.error("Não foi possível encontrar informações de validação para '" + el + "'");
             }
           });
 
@@ -791,13 +791,13 @@
 				name: "Validemail",
 				type: "regex",
 				regex: "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\\.[A-Za-z]{2,4}",
-				message: "Not a valid email address<!-- data-validator-validemail-message to override -->"
+				message: "Não é um endereço de email válido<!-- data-validator-validemail-message to override -->"
 			},
 			passwordagain: {
 				name: "Passwordagain",
 				type: "match",
 				match: "password",
-				message: "Does not match the given password<!-- data-validator-paswordagain-message to override -->"
+				message: "Não corresponde a senha fornecida<!-- data-validator-paswordagain-message to override -->"
 			},
 			positive: {
 				name: "Positive",
@@ -836,13 +836,13 @@
 			required: {
 				name: "Required",
 				type: "required",
-				message: "This is required<!-- data-validator-required-message to override -->"
+				message: "Isso é necessário<!-- data-validator-required-message to override -->"
 			},
 			checkone: {
 				name: "Checkone",
 				type: "minchecked",
 				minchecked: 1,
-				message: "Check at least one option<!-- data-validation-checkone-message to override -->"
+				message: "Verifique pelo menos uma opção<!-- data-validation-checkone-message to override -->"
 			}
 		}
 	};
