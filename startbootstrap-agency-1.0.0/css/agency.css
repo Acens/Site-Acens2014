@@ -782,6 +782,10 @@ ul.social-buttons li a:active {
     outline: 0;
 }
 
+#teste {
+    top:100px;
+}
+
 .container-pp{
 	position:absolute;
 	width:100%;
@@ -792,8 +796,10 @@ ul.social-buttons li a:active {
 }
 
 .portfolio-modal-pp .modal-content {
+    position: absolute;
+    padding: 100px 0;
 	width:60%;
-    height:60%;
+    min-height:60%;
 	left:19.5%;
 	top:20%;
     border: 0;
