@@ -272,7 +272,9 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .nav {
+	position:relative;
 	background-color:#fff;
+	top:5px;
 }
 
 .navbar-nav {
